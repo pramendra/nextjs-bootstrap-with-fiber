@@ -1,0 +1,36 @@
+{
+  "name": "nextjs-bootstrap-with-fiber",
+  "version": "1.0.0",
+  "description": "boostrap app using next 5.* and react-fiber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramendra/nextjs-bootstrap-with-fiber.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "react-fiber",
+    "eslint",
+    "prettier",
+    "flow",
+    "vscode"
+  ],
+  "author": "Pramendra Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pramendra/nextjs-bootstrap-with-fiber/issues"
+  },
+  "homepage": "https://github.com/pramendra/nextjs-bootstrap-with-fiber#readme",
+  "dependencies": {
+    "next": "^5.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  }
+}
