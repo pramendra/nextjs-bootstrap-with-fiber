@@ -31,3 +31,37 @@ append following snippet inside *scripts*  of package.json file
 git add .
 git commit -m "init with nextJs and React"
 ```
+
+### Setup eslint
+
+```
+yarn add -D babel-eslint eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react
+touch .eslintrc
+touch .eslintignore
+```
+
+#### add following snippet inside .eslintrc
+```
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "globals": {
+    "document": true,
+    "window": true,
+    "process": true
+  },
+  "rules": {
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": 0,
+    "linebreak-style": 0
+  }
+}
+```
+
+#### add following snippet inside .eslintignore
+```
+build/*
+test_server/*
+```
