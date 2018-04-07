@@ -179,3 +179,31 @@ yarn dev
 ```
 v9.4.0
 ```
+
+### add support browsers list support
+
+#### add following snippet inside .browserslistrc
+
+```
+{
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
+```
+
+#### add following package
+
+```
+yarn add -D @babel/preset-env
+```
+
+#### update following snippet to support browers list
+
+```
+{
+  "presets": ["env", "next/babel", "flow"],
+  "plugins": ["transform-flow-strip-types"]
+}
+```
