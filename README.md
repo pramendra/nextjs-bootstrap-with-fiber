@@ -125,3 +125,38 @@ trim_trailing_whitespace = false
 "format": "prettier --write '**/*.{js,jsx}'",
 "lint": "eslint '**/*.{js,jsx}' --quiet",
 ```
+
+### add babel and flow support
+
+```
+yarn add -D babel-cli babel-preset-flow flow-bin flow-typed
+```
+
+### add following snippet to .babelrc
+
+```
+{
+  "presets": ["next/babel", "flow"]
+}
+```
+
+### add following snippet to .flowconfig
+
+```
+[ignore]
+.*/node_modules/.*/\(lib\|test\).*\.json$
+
+[include]
+
+[libs]
+
+[options]
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+```
+
+#### append inside scripts in package.json
+
+```
+"flow": "flow check",
+```
