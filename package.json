@@ -8,9 +8,9 @@
     "format": "prettier --write '**/*.{js,jsx}'",
     "lint": "eslint '**/*.{js,jsx}' --quiet",
     "flow": "flow check",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next src",
+    "build": "next build src",
+    "start": "next start src"
   },
   "repository": {
     "type": "git",

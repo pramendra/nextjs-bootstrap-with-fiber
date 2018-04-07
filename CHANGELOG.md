@@ -207,3 +207,13 @@ yarn add -D @babel/preset-env
   "plugins": ["transform-flow-strip-types"]
 }
 ```
+
+### move nextjs insdide src
+
+#### update scripts inside package.json
+
+```
+"dev": "next src",
+"build": "next build src",
+"start": "next start src"
+```
