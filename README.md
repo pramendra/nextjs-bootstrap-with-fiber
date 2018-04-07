@@ -129,14 +129,15 @@ trim_trailing_whitespace = false
 ### add babel and flow support
 
 ```
-yarn add -D babel-cli babel-preset-flow flow-bin flow-typed
+yarn add -D babel-cli babel-preset-flow flow-bin flow-typed babel-plugin-transform-flow-strip-types
 ```
 
 ### add following snippet to .babelrc
 
 ```
 {
-  "presets": ["next/babel", "flow"]
+  "presets": ["next/babel", "flow"],
+  "plugins": ["transform-flow-strip-types"]
 }
 ```
 
