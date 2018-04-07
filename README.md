@@ -65,3 +65,27 @@ touch .eslintignore
 build/*
 test_server/*
 ```
+
+### Setup prettier
+```
+  yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+```
+#### append followng snippet inside .eslintrc
+```
+ "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+```
+
+#### add followng snippet inside .prettierrc
+```
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all"
+}
+```
+
