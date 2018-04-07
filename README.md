@@ -1,12 +1,12 @@
 # Boilerplate using NextJS & React-Fiber
 
-## Setup NextJS and React 
+## Setup NextJS and React
+
 ```
 mkdir nextjs-bootstrap-with-fibe
 yarn init -y
 cd nextjs-bootstrap-with-fibe
 ```
-
 
 ```
 curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore
@@ -18,14 +18,13 @@ git commit -m "Add .gitignore"
 yarn add next react react-dom
 ```
 
-append following snippet inside *scripts*  of package.json file
+append following snippet inside _scripts_ of package.json file
 
 ```
     "dev": "next",
     "build": "next build",
     "start": "next start"
 ```
-
 
 ```
 git add .
@@ -41,6 +40,7 @@ touch .eslintignore
 ```
 
 #### add following snippet inside .eslintrc
+
 ```
 {
   "parser": "babel-eslint",
@@ -61,16 +61,20 @@ touch .eslintignore
 ```
 
 #### add following snippet inside .eslintignore
+
 ```
 build/*
 test_server/*
 ```
 
 ### Setup prettier
+
 ```
   yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
+
 #### append followng snippet inside .eslintrc
+
 ```
  "extends": ["airbnb", "prettier", "prettier/react"],
   "plugins": ["prettier"],
@@ -81,6 +85,7 @@ test_server/*
 ```
 
 #### add followng snippet inside .prettierrc
+
 ```
 {
   "printWidth": 80,
@@ -88,7 +93,9 @@ test_server/*
   "trailingComma": "all"
 }
 ```
+
 ### add .editorconfig
+
 ```
 root = true
 
@@ -101,4 +108,13 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
+```
+
+### add following inside .vscode/settings.json for vscode config
+
+```
+{
+  "eslint.enable": true,
+  "editor.formatOnSave": true
+}
 ```
