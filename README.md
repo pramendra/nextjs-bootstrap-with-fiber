@@ -161,3 +161,17 @@ esproposal.class_instance_fields=enable
 ```
 "flow": "flow check",
 ```
+
+### add following snippet inside pages/index.js to create a sample page
+
+```
+import React from 'react';
+
+export default () => <h1>Hello World</h1>;
+```
+
+#### run add
+
+```
+yarn dev
+```
