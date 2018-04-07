@@ -118,3 +118,10 @@ trim_trailing_whitespace = false
   "editor.formatOnSave": true
 }
 ```
+
+### add following snippet inside package.json to support eslit and prettier cli
+
+```
+"format": "prettier --write '**/*.{js,jsx}'",
+"lint": "eslint '**/*.{js,jsx}' --quiet",
+```
